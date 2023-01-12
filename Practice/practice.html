@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body bgcolor="black">
+    <div style="width: 100%;">
+        <fieldset>
+
+            <h1 style="text-align: center;"><strong style="text-decoration: underline;">REGISTRATION FORM</strong></h1>
+            <form>
+                <div style="width: 100%; ">
+                    <div id="left" style="width: 50%; float: left;">
+                        <div><label for="fName">FirstName: </label>
+                            <input type="text" placeholder="Enter First Name" name="First Name">
+                        </div>
+                        <div><label for="DOB">Date Of Birth: </label>
+                            <input type="date" name="mm/dd/yyyy">
+                        </div>
+                        <div>
+                            <label for="fName">Password: </label>
+                            <input type="password" placeholder="Enter your password" name="PassWord">
+                        </div>
+                        <div>
+
+                            <label for="gender">Input Gender: </label>
+                            <select>
+                                <option disabled selected>Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+
+
+                        </div>
+                    </div>
+                    <div id="right" style="width: 50%; float: right;">
+                        <div><label for="lName">LastName: </label>
+                            <input type="text" placeholder="Enter Last Name" name="Last Name" maxlength="5">
+                        </div>
+                        <div><label for="R.Month">Reg.Month: </label>
+                            <input type="text" placeholder="Enter Reg.Month" name="Reg.Month">
+                        </div>
+                        <div>
+                            <label for="password">Confirm Password: </label>
+                            <input type="password" placeholder="Confirm your password" name="Confirm Password">
+                        </div>
+                        <div>
+                            <label for="Age">Input Age: </label>
+                            <input type="number" placeholder="Enter YourAge" min="18" max="50" name="Age">
+                        </div>
+                    </div>
+
+                </div>
+                <div style="float: none;"></div>
+            </form>
+            <style>
+                label {
+                    color: white;
+                }
+
+                h1 {
+                    color: white;
+                }
+
+                option {
+                    color: red;
+                }
+            </style>
+            <div>
+                <form>
+                    <label for="Level">Choose Your Level: </label><br>
+                    <input type="radio" id="Secondary" name="fav_language" value="Secondary">
+                    <label for="html">Secondary</label>
+                    <input type="radio" id="primary" name="fav_language" value="primary">
+                    <label for="css">primary</label><br>
+                    
+                    <form>
+                        <label for="Categories"> Choose Your Category: </label><br>
+                        <input type="checkbox" id="fashion" name="fav_category" value="Fashion">
+                        <label for="fashion">Fashion</label>
+                        <input type="checkbox" id="art" name="fav_category" value="Art">
+                        <label for="css">Art</label>
+                        <input type="checkbox" id="music" name="fav_category" value="Music">
+                        <label for="javascript">Music</label>
+                    </form>
+            </div>
+            </form><br>
+            <span>
+                <label for="Address">ADDRESS : </label>
+                <textarea name="Address" id="Address" cols="100" rows="1"></textarea><br>
+            </span>
+            <input type="submit" value="Submit">
+        </fieldset>
+
+    </div>
+</body>
+
+</html>
